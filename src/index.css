@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("./assets/fonts/Helvetica-Bold.ttf");  
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("./assets/fonts/helvetica-light-587ebe5a59211.ttf");  
+}
+
+@font-face {
+  font-family: "Helvetica-Oblique";
+  src: url("./assets/fonts/Helvetica-Oblique.ttf");  
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/Helvetica.ttf");  
+}
+
+body {
+  @apply font-Helvetica
+}
+
+h1 {
+  @apply font-Inter
+}
+
+h2 {
+  @apply font-Helvetica
+}
+
+nav {
+  @apply bg-[#0D0D0D] text-white flex justify-between items-center px-12 lg:px-40 py-4
+}
+
+nav.mobile {
+  @apply p-4
+}
+
+nav.mobile button {
+  @apply shadow flex justify-center items-center bg-[#FF9F0D] text-2xl
+}
+
+nav ul {
+  @apply flex gap-6 font-Inter
+}
+
+nav ul .active {
+  @apply text-[#FF9F0D]
+}
+
+nav .icons {
+  @apply flex gap-4
+}
+
+.header {
+  @apply flex flex-col justify-center items-center bg-banner h-[200px] lg:h-[250px] bg-bottom bg-cover
+}
+
+.header h1 {
+  @apply text-[38px] lg:text-[48px] font-bold text-white
+}
+
+.header p {
+  @apply flex gap-2 font-Inter items-center text-[#FF9F0D] text-[14px] font-extralight
+}
+
+.header a {
+  @apply text-white flex items-center gap-2
+}
+
+footer {
+  @apply bg-[#0D0D0D] text-white px-4 md:px-12 lg:px-40 lg:py-8
+}
+
+footer .newsletter {
+  @apply flex flex-col lg:flex-row gap-4 justify-between items-center py-8 border-b-2 border-[#FF9F0D]
+}
+
+footer .cta h4 {
+  @apply text-[32px] font-BoldHelvetica mb-2
+}
+
+footer .change {
+  @apply text-[#FF9F0D]
+}
+
+footer .cta p {
+  @apply text-[16px] font-normal
+}
+
+footer .newsletter form {
+  @apply h-[45px] flex rounded overflow-hidden bg-[#FF9F0D]
+}
+
+footer .newsletter form input {
+  @apply h-full w-[250px] bg-none bg-transparent border-none placeholder:text-white outline-none text-white pl-4
+}
+
+footer .newsletter form button {
+  @apply h-full bg-white text-[#FF9F0D] px-4 text-sm lg:text-base lg:px-8
+}
+
+footer .footer {
+  @apply flex flex-col lg:flex-row gap-4 justify-between py-8
+}
+
+footer .footer h5 {
+  @apply text-[20px] mb-4 font-BoldHelvetica
+}
+
+.footer ul li {
+  @apply mb-4 text-[16px]
+}
+
+footer .footer div {
+  @apply w-full lg:w-1/4
+}
+
+.footer .company p.about {
+  @apply text-[18px]
+}
+
+.acknowledgement {
+  @apply flex flex-col-reverse gap-4 lg:flex-row justify-between items-center bg-[#4F4F4F] text-white px-4 md:px-12 lg:px-40 py-4 lg:py-6
+}
+
+.acknowledgement .socials {
+  @apply flex gap-2
+}
+
+.acknowledgement p {
+  @apply text-[16px] text-center font-Inter
+}
+
+.acknowledgement .socials a {
+  @apply bg-white text-black p-2 text-black hover:text-[#FF9F0D]
+}
+
+section.time {
+  @apply flex gap-2 items-center mt-4 font-Inter rounded overflow-hidden
+}
+
+section.time div {
+  @apply w-auto
+}
+
+.company section.time div h6 {
+  @apply text-sm
+}
+
+section.time div p {
+  @apply text-xs mt-2
+}
+
+.clock-icon {
+  @apply bg-[#FF9F0D] text-5xl flex justify-center items-center p-4
+}
+
+.errorpage {
+  @apply px-4 md:px-12 py-8 lg:py-16 text-center flex flex-col justify-center items-center
+}
+
+.errorpage h1 {
+  @apply text-[60px] lg:text-[96px] text-[#FF9F0D] font-BoldHelvetica
+}
+
+.errorpage h2 {
+  @apply text-[28px] lg:text-[32px] font-BoldHelvetica
+}
+
+.errorpage p {
+  @apply text-[18px] font-Inter my-4 w-11/12 md:w-4/5 lg:w-2/5 text-center text-[#4F4F4F]
+}
+
+.errorpage a {
+  @apply bg-[#FF9F0D] text-white px-6 py-2 text-[18px] font-BoldHelvetica
+}
+
+.menu {
+  @apply px-4 md:px-12 py-4 lg:py-20
+}
+
+.menu h2 {
+  @apply text-[36px] lg:text-[48px] font-BoldHelvetica mb-2
+}
+
+.each-menu {
+   @apply flex flex-col-reverse lg:flex-row gap-12 justify-between items-center
+}
+
+.each-menu img {
+  @apply w-full lg:w-2/5 h-full
+}
+
+.each-menu .menu-list {
+  @apply w-full lg:w-3/5
+}
+
+.nameNprice {
+  @apply flex justify-between items-center font-BoldHelvetica
+}
+
+.nameNprice h3:nth-child(2) {
+  @apply text-[#FF9F0D]
+}
+
+.nameNprice h3 {
+  @apply text-[18px] lg:text-[24px] hover:text-[#FF9F0D]
+}
+
+.singlemenu {
+  @apply my-2 shadow-md p-4
+}
+
+.singlemenu p {
+  @apply text-[16px] font-Helvetica text-[#4F4F4F]
+}
+
+.singlemenu p:nth-child(2) {
+  @apply text-[#828282]
+}
+
+.partners {
+  @apply flex flex-col justify-center items-center py-20
+}
+
+.partners p {
+  @apply font-Inter text-[18px]
+}
+
+.partners h6 {
+  @apply text-[32px] mb-4 text-center font-BoldHelvetica
+}
+
+.partners .brands {
+  @apply flex flex-wrap justify-center gap-4 lg:gap-6 mt-4
+}
+
+.partners .brands img {
+  @apply w-[40%] lg:w-auto
+}
+
+.mid-menu {
+  @apply bg-banner2 relative h-[350px] bg-bottom bg-cover
+}
+
+.mid-menu .overlay {
+  @apply flex flex-wrap gap-2 justify-center lg:justify-between font-BoldHelvetica px-2 md:px-12 py-4 lg:px-40 text-center text-white items-center absolute top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.7)]
+}
+
+.mid-menu .overlay div {
+  @apply w-[47%] lg:w-auto text-center flex flex-col justify-center items-center
+}
+
+.mid-menu .overlay div img {
+  @apply h-[70px]
+}
+
+.mid-menu .overlay div h5 {
+  @apply md:my-2 text-[30px] lg:text-[40px]
+}
+
+.chefs {
+  @apply px-4 md:px-12 lg:px-40 py-8 lg:py-20 flex gap-4 flex-wrap text-center
+}
+
+.chefs h3 {
+  @apply text-[16px] md:text-[20px] font-BoldHelvetica mt-2
+}
+
+.chefs .chef-card {
+  @apply w-[47%] md:w-[30%] lg:w-[22%]
+}

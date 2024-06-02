@@ -1,0 +1,274 @@
+.shop {
+    @apply p-4 md:px-12 lg:px-40 py-12 lg:py-20 flex flex-col-reverse lg:flex-row gap-4
+}
+
+.shop .store {
+    @apply w-full lg:w-3/4 shadow p-4
+}
+
+.shop .store select {
+    @apply px-6 py-2 border-2 outline-none rounded mx-2 text-[#0D0D0D] bg-none bg-transparent
+}
+
+.shop .store .pagination {
+    @apply flex gap-4 justify-center items-center my-4
+}
+
+.shop .store .pagination button {
+    @apply shadow w-[40px] h-[40px] font-medium hover:bg-[#FF9F0D] hover:text-white flex justify-center items-center text-[#FF9F0D]
+}
+
+.shop .filter {
+    @apply w-full lg:w-1/4 shadow p-4
+}
+
+.shop .filter .searchbox {
+    @apply bg-[rgba(255,159,13,0.1)] flex w-full h-[40px] items-center
+}
+
+.shop .filter .searchbox input {
+    @apply w-full bg-none bg-transparent h-full text-[14px] px-2
+}
+
+.shop .filter .searchbox button {
+    @apply bg-[#FF9F0D] text-white h-full w-[50px] text-[18px] flex justify-center items-center
+}
+
+.shop .filter h3 {
+    @apply font-BoldHelvetica text-[20px] my-2
+}
+
+.shop .filter input {
+    @apply my-2
+}
+
+.shop .filter .store-cta {
+    @apply p-4 bg-store h-[250px] w-full text-white my-4 font-Inter relative
+}
+
+.shop .filter .store-cta h5 {
+    @apply text-[18px] font-Helvetica
+}
+
+.shop .filter .store-cta h6 {
+    @apply text-[#FF9F0D] font-bold
+}
+
+.shop .filter .store-cta a {
+    @apply absolute bottom-5 flex items-center gap-2
+}
+
+.shop .filter .range {
+    @apply w-full accent-[#FF9F0D] outline-none
+}
+
+.shop .store .foods {
+    @apply flex gap-4 flex-wrap py-8
+}
+
+.foods .each-food {
+    @apply w-[47%] lg:w-[31%] 
+}
+
+.foods .each-food img {
+    @apply h-[140px] md:h-[200px] lg:h-[200px] w-full
+}
+
+.foods .each-food .thumbnail {
+    @apply relative
+}
+
+.foods .each-food .thumbnail .buttons {
+    @apply absolute top-0 left-0 right-0 bottom-0 hidden
+}
+
+.foods .each-food .buttons button {
+    @apply bg-white p-2 text-[#FF9F0D] hover:bg-[#FF9F0D] hover:text-white
+}
+
+.foods .each-food:hover .buttons {
+    @apply flex justify-center items-center gap-4
+}
+
+.foods .each-food h3 {
+    @apply text-[18px] font-Inter font-semibold
+}
+
+.foods .each-food h4 {
+    @apply text-[16px] font-Inter text-[#FF9F0D]
+}
+
+.foods .each-food h4 span {
+    @apply text-[#828282] line-through
+}
+
+.food-details {
+    @apply p-4 lg:px-40 lg:py-20
+}
+
+.food-details .food {
+    @apply flex flex-col lg:flex-row gap-6 
+}
+
+.food-details button.back {
+    @apply bg-[#FF9F0D] text-white px-4 py-2 mb-4 rounded
+}
+
+.food-details .food .details, .food-details .food img {
+    @apply w-full lg:w-1/2
+}
+
+.food-details .food .details h3 {
+    @apply text-[#333333] font-BoldHelvetica text-[32px] my-2
+}
+
+.food-details .food .details h2 {
+    @apply text-[#333333] font-BoldHelvetica text-[40px]
+}
+
+.food-details .food .details p.description {
+    @apply mb-4
+}
+
+.food-details .food .ratings, .food-details .food .ratings p {
+    @apply flex gap-2 items-center text-[#A9A9A9] text-[16px] font-Inter
+}
+
+.food-details .food .ratings p {
+    @apply text-[#FF9F0D]
+}
+
+.plusNminus {
+    @apply flex 
+}
+
+.plusNminus button {
+    @apply w-[50px] h-[50px] border text-[20px] font-bold
+}
+
+.food-details .food .cartAddition {
+    @apply flex gap-4 my-4
+}
+
+.food-details .food .details button.addcart {
+    @apply px-6 py-2 bg-[#FF9F0D] text-white flex gap-2 items-center rounded
+}
+
+.cart {
+    @apply px-4 md:px-12 lg:px-40 py-4 py-20
+}
+
+.cart .table-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cart .table-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    @apply overflow-scroll
+}
+
+.cart table, .cart table tbody {
+    @apply w-[200%] md:w-full font-bold
+}
+
+.cart table tr {
+    @apply mb-4 border
+}
+
+.cart table tr td {
+    @apply w-[300px] md:w-1/5 p-2 md:p-4 text-center
+}
+
+.cart table tr td img {
+    @apply h-[120px] w-full
+}
+
+.cart table tr td button {
+    @apply shadow px-4 py-2 
+}
+
+.cart .couponNtotal {
+    @apply flex flex-col md:flex-row gap-4 mt-12
+}
+
+.cart .couponNtotal section {
+    @apply w-full md:w-1/2
+}
+
+.cart .couponNtotal section h5 {
+    @apply text-[24px] font-BoldHelvetica mb-4
+}
+
+.cart .couponNtotal section div.addCoupon {
+    @apply p-4 border rounded
+}
+
+
+.cart .couponNtotal section div p {
+    @apply text-[#828282] text-[18px] mb-4
+}
+
+.cart .couponNtotal section div form {
+    @apply w-full flex h-[50px] rounded overflow-hidden
+}
+
+.cart .couponNtotal section div form input {
+    @apply w-full bg-none bg-transparent border h-full pl-2 outline-none
+}
+
+.cart .couponNtotal section div form button {
+    @apply bg-[#FF9F0D] text-white px-4 
+}
+
+.wishlist {
+    @apply px-4 md:px-12 lg:px-40 py-4 lg:py-20
+}
+
+.wishlist-item {
+    @apply h-[150px] lg:h-[200px] mb-4 flex gap-4 items-center
+}
+
+.wishlist-item img {
+    @apply h-full w-auto
+}
+
+.wishlist-item .item-detail h3, .wishlist-item .item-detail h4 {
+    @apply font-BoldHelvetica text-sm
+}
+
+.wishlist-item .item-detail h3 {
+    @apply text-[15px] lg:text-[18px] lg:mb-2
+}
+
+.wishlist-item .item-detail button {
+    @apply p-2 rounded shadow flex text-[12px] items-center gap-2 lg:mt-2
+}
+
+.empty {
+    @apply p-8 flex flex-col gap-2 justify-center items-center
+}
+
+.empty img {
+    @apply h-[50vh] lg:h-[60vh]
+}
+
+.empty h3 {
+    @apply font-BoldHelvetica text-[24px] text-[#FF9F0D]
+}
+
+.empty p {
+    @apply text-[#4F4F4F] font-Inter
+}
+
+.empty a {
+    @apply px-6 py-2 rounded bg-[#FF9F0D] text-white
+}
+
+.modal {
+    @apply bg-green-500 p-4 text-white text-center fixed z-50 left-0 right-0 top-0 rounded-l w-full
+}
+
+.modal h4 {
+    @apply font-bold text-xl mb-2 font-Inter
+}
